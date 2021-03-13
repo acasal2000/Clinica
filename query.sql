@@ -65,3 +65,5 @@ select consultas.codConsulta AS [Cod. Consulta], consultas.codFunc AS [Cod. Médi
     funcionarios.nome AS [Nome do Médico], funcionarios.telefone AS [Telefone do Médico], funcionarios.email AS [Email do Médico], 
 	clientes.cartaoCidadao [C.C. do Utente], clientes.nome as [Nome do Utente], clientes.telefone AS [Telefone do Utente], clientes.email AS [Email do Utente]  from consultas inner join funcionarios on consultas.codFunc = funcionarios.codFunc
 		inner join clientes on consultas.codCliente = clientes.codCliente;
+
+select funcionarios.codFunc from funcionarios where funcionarios.codFunc not in(select FuncDepartamentos.codFunc from FuncDepartamentos);

@@ -43,8 +43,8 @@ namespace clinica
             this.novoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblNumDepartamentos = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblNumFuncionarios = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@ namespace clinica
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblNumClientes = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -70,7 +71,7 @@ namespace clinica
             this.clientesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1192, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(864, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuPrincipal";
             // 
@@ -101,7 +102,8 @@ namespace clinica
             // 
             this.funcionáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirFuncionárioToolStripMenuItem,
-            this.consultarFuncionáriosToolStripMenuItem});
+            this.consultarFuncionáriosToolStripMenuItem,
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem});
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
             this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.funcionáriosToolStripMenuItem.Text = "Funcionários";
@@ -176,16 +178,6 @@ namespace clinica
             this.panel1.Size = new System.Drawing.Size(206, 79);
             this.panel1.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Número de Departamentos";
-            // 
             // lblNumDepartamentos
             // 
             this.lblNumDepartamentos.AutoSize = true;
@@ -195,6 +187,16 @@ namespace clinica
             this.lblNumDepartamentos.Size = new System.Drawing.Size(15, 17);
             this.lblNumDepartamentos.TabIndex = 1;
             this.lblNumDepartamentos.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Número de Departamentos";
             // 
             // panel2
             // 
@@ -286,11 +288,18 @@ namespace clinica
             this.label8.TabIndex = 0;
             this.label8.Text = "Número de Clientes";
             // 
+            // associarFuncionárioAUmDepartamentoToolStripMenuItem
+            // 
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Name = "associarFuncionárioAUmDepartamentoToolStripMenuItem";
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Text = "Associar Funcionário a um Departamento";
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Click += new System.EventHandler(this.associarFuncionárioAUmDepartamentoToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 658);
+            this.ClientSize = new System.Drawing.Size(864, 658);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -344,6 +353,7 @@ namespace clinica
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblNumClientes;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ToolStripMenuItem associarFuncionárioAUmDepartamentoToolStripMenuItem;
     }
 }
 

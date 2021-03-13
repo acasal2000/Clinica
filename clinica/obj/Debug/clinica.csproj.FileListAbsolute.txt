@@ -20,3 +20,4 @@ C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Client
 C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Clientes.frmAtualizarCliente.resources
 C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Consultas.frmConsultarConsultas.resources
 C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Consultas.frmAtualizarConsulta.resources
+C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Funcionarios.frmAssociarFuncDep.resources

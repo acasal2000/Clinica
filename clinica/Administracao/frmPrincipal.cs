@@ -166,5 +166,11 @@ namespace clinica
                 MessageBox.Show("Ocorreu um erro ao carregar o total de clientes no sistema!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void associarFuncionárioAUmDepartamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Funcionarios.frmAssociarFuncDep abrir = new Funcionarios.frmAssociarFuncDep();
+            abrir.Show();
+        }
     }
 }

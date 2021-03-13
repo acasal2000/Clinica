@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -107,6 +108,12 @@
     <Compile Include="Departamentos\frmInserirDepartamento.Designer.cs">
       <DependentUpon>frmInserirDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funcionarios\frmAssociarFuncDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios\frmAssociarFuncDep.Designer.cs">
+      <DependentUpon>frmAssociarFuncDep.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funcionarios\frmAtualizarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Departamentos\frmInserirDepartamento.resx">
       <DependentUpon>frmInserirDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionarios\frmAssociarFuncDep.resx">
+      <DependentUpon>frmAssociarFuncDep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Funcionarios\frmAtualizarFuncionario.resx">
       <DependentUpon>frmAtualizarFuncionario.cs</DependentUpon>
