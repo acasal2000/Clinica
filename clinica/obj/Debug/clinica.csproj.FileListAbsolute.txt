@@ -21,3 +21,6 @@ C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Client
 C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Consultas.frmConsultarConsultas.resources
 C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Consultas.frmAtualizarConsulta.resources
 C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Funcionarios.frmAssociarFuncDep.resources
+C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Medicos.frmConsultarMarcacoes.resources
+C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Medicos.frmPrincipalMedico.resources
+C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.frmLogin.resources

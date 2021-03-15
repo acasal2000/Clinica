@@ -67,3 +67,29 @@ select consultas.codConsulta AS [Cod. Consulta], consultas.codFunc AS [Cod. Médi
 		inner join clientes on consultas.codCliente = clientes.codCliente;
 
 select funcionarios.codFunc from funcionarios where funcionarios.codFunc not in(select FuncDepartamentos.codFunc from FuncDepartamentos);
+
+
+create table login(
+	codLogin int primary key identity(1,1),
+	utilizador varchar(max) not null,
+	password varchar(max) not null,
+	--funcao varchar(max) check(funcao='A' OR funcao='R' OR funcao= 'M')
+);
+
+insert into login(utilizador, password) values('admin','123');
+
+create table loginFunc(
+	codLoginFunc int primary key identity(1,1),
+	codLogin int foreign key references login(codLogin),
+	codFunc int foreign key references funcionarios(codFunc),
+	funcao varchar(max) check(funcao='A' OR funcao='R' OR funcao= 'M')
+);
+
+insert into loginFunc(codLogin, codFunc, funcao) values(1, 3, 'A');
+
+select * from login INNER JOIN loginFunc ON login.codLogin = loginFunc.codLogin 
+ INNER JOIN funcionarios ON loginFunc.codFunc = funcionarios.codFunc AND loginFunc.funcao='A'
+
+ select login.utilizador, login.password, loginFunc.funcao, loginFunc.codFunc from login INNER JOIN loginFunc ON login.codLogin = loginFunc.codLogin
+                INNER JOIN funcionarios ON loginFunc.codFunc = funcionarios.codFunc 
+

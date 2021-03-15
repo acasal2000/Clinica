@@ -108,6 +108,12 @@
     <Compile Include="Departamentos\frmInserirDepartamento.Designer.cs">
       <DependentUpon>frmInserirDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funcionarios\frmAssociarFuncDep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,18 @@
     </Compile>
     <Compile Include="Funcionarios\frmInserirFuncionario.Designer.cs">
       <DependentUpon>frmInserirFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicos\frmConsultarMarcacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicos\frmConsultarMarcacoes.Designer.cs">
+      <DependentUpon>frmConsultarMarcacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicos\frmPrincipalMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicos\frmPrincipalMedico.Designer.cs">
+      <DependentUpon>frmPrincipalMedico.cs</DependentUpon>
     </Compile>
     <Compile Include="msgHelpers.cs" />
     <Compile Include="Program.cs" />
@@ -165,6 +183,9 @@
     <EmbeddedResource Include="Departamentos\frmInserirDepartamento.resx">
       <DependentUpon>frmInserirDepartamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Funcionarios\frmAssociarFuncDep.resx">
       <DependentUpon>frmAssociarFuncDep.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Funcionarios\frmInserirFuncionario.resx">
       <DependentUpon>frmInserirFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicos\frmConsultarMarcacoes.resx">
+      <DependentUpon>frmConsultarMarcacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicos\frmPrincipalMedico.resx">
+      <DependentUpon>frmPrincipalMedico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
