@@ -17,8 +17,8 @@ namespace clinica.Medicos
 
         private void mostrarConsultas()
         {
-            //try
-            //{
+            try
+            {
                 baseDados.abrirConexao();
 
                 string query = "select consultas.dataConsula AS [Data da Consulta], consultas.obs AS [Observações], " +
@@ -34,13 +34,13 @@ namespace clinica.Medicos
 
                     dataAdapter.Fill(dataSet);
                     dataGridViewConsultas.DataSource = dataSet.Tables[0];
-                dataGridViewConsultas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    dataGridViewConsultas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 }
-            //}
-            //catch
-            //{
-
-            //}
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um erro ao carregar as suas consultas!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             baseDados.fecharConexao();
         }

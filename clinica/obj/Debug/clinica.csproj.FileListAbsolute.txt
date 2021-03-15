@@ -24,3 +24,6 @@ C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Funcio
 C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Medicos.frmConsultarMarcacoes.resources
 C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.Medicos.frmPrincipalMedico.resources
 C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.frmLogin.resources
+C:\Users\andre\Desktop\Programação\C#\clinica\clinica\bin\Debug\MetroFramework.dll
+C:\Users\andre\Desktop\Programação\C#\clinica\clinica\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\andre\Desktop\Programação\C#\clinica\clinica\obj\Debug\clinica.csproj.CopyComplete

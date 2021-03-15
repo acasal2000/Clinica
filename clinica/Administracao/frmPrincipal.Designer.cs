@@ -36,6 +36,7 @@ namespace clinica
             this.funcionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirFuncionárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarFuncionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendarConsultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,7 +55,8 @@ namespace clinica
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblNumClientes = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.associarFuncionárioAUmDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -71,7 +73,7 @@ namespace clinica
             this.clientesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(864, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1190, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuPrincipal";
             // 
@@ -111,16 +113,23 @@ namespace clinica
             // inserirFuncionárioToolStripMenuItem
             // 
             this.inserirFuncionárioToolStripMenuItem.Name = "inserirFuncionárioToolStripMenuItem";
-            this.inserirFuncionárioToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.inserirFuncionárioToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
             this.inserirFuncionárioToolStripMenuItem.Text = "Inserir Funcionário";
             this.inserirFuncionárioToolStripMenuItem.Click += new System.EventHandler(this.inserirFuncionárioToolStripMenuItem_Click);
             // 
             // consultarFuncionáriosToolStripMenuItem
             // 
             this.consultarFuncionáriosToolStripMenuItem.Name = "consultarFuncionáriosToolStripMenuItem";
-            this.consultarFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.consultarFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
             this.consultarFuncionáriosToolStripMenuItem.Text = "Consultar Funcionários";
             this.consultarFuncionáriosToolStripMenuItem.Click += new System.EventHandler(this.consultarFuncionáriosToolStripMenuItem_Click);
+            // 
+            // associarFuncionárioAUmDepartamentoToolStripMenuItem
+            // 
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Name = "associarFuncionárioAUmDepartamentoToolStripMenuItem";
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Text = "Associar Funcionário a um Departamento";
+            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Click += new System.EventHandler(this.associarFuncionárioAUmDepartamentoToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
@@ -288,18 +297,27 @@ namespace clinica
             this.label8.TabIndex = 0;
             this.label8.Text = "Número de Clientes";
             // 
-            // associarFuncionárioAUmDepartamentoToolStripMenuItem
+            // monthCalendar1
             // 
-            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Name = "associarFuncionárioAUmDepartamentoToolStripMenuItem";
-            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
-            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Text = "Associar Funcionário a um Departamento";
-            this.associarFuncionárioAUmDepartamentoToolStripMenuItem.Click += new System.EventHandler(this.associarFuncionárioAUmDepartamentoToolStripMenuItem_Click);
+            this.monthCalendar1.Location = new System.Drawing.Point(15, 182);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 5;
+            // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 24);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 562);
+            this.splitter1.TabIndex = 6;
+            this.splitter1.TabStop = false;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 658);
+            this.ClientSize = new System.Drawing.Size(1190, 586);
+            this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -354,6 +372,8 @@ namespace clinica
         private System.Windows.Forms.Label lblNumClientes;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolStripMenuItem associarFuncionárioAUmDepartamentoToolStripMenuItem;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Splitter splitter1;
     }
 }
 

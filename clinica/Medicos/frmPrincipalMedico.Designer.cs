@@ -37,9 +37,6 @@ namespace clinica.Medicos
             this.label6 = new System.Windows.Forms.Label();
             this.pnlTitulo = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.receitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.passarReceitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblUtilizador = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnlTitulo.SuspendLayout();
@@ -48,8 +45,7 @@ namespace clinica.Medicos
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem,
-            this.receitasToolStripMenuItem});
+            this.consultasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -121,35 +117,11 @@ namespace clinica.Medicos
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "Médicos";
             // 
-            // receitasToolStripMenuItem
-            // 
-            this.receitasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.passarReceitaToolStripMenuItem});
-            this.receitasToolStripMenuItem.Name = "receitasToolStripMenuItem";
-            this.receitasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.receitasToolStripMenuItem.Text = "Receitas";
-            // 
-            // passarReceitaToolStripMenuItem
-            // 
-            this.passarReceitaToolStripMenuItem.Name = "passarReceitaToolStripMenuItem";
-            this.passarReceitaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.passarReceitaToolStripMenuItem.Text = "Passar Receita";
-            // 
-            // lblUtilizador
-            // 
-            this.lblUtilizador.AutoSize = true;
-            this.lblUtilizador.Location = new System.Drawing.Point(479, 212);
-            this.lblUtilizador.Name = "lblUtilizador";
-            this.lblUtilizador.Size = new System.Drawing.Size(35, 13);
-            this.lblUtilizador.TabIndex = 20;
-            this.lblUtilizador.Text = "label1";
-            // 
             // frmPrincipalMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblUtilizador);
             this.Controls.Add(this.pnlTitulo);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.menuStrip1);
@@ -177,8 +149,5 @@ namespace clinica.Medicos
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel pnlTitulo;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.ToolStripMenuItem receitasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem passarReceitaToolStripMenuItem;
-        private System.Windows.Forms.Label lblUtilizador;
     }
 }
